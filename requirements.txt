@@ -1,0 +1,65 @@
+# OrVex Framework - Toutes dépendances complètes
+# Version: 1.9.0
+# Date: Février 2026
+
+# ========== CORE ==========
+colorama>=0.4.6              # Interface colorée
+pyyaml>=6.0.1                # Configuration YAML
+requests>=2.31.0             # Requêtes HTTP
+cryptography>=41.0.7         # Chiffrement API keys
+jinja2>=3.1.2                # Template engine
+psutil>=5.9.0                # Informations système
+tqdm>=4.66.1                 # Barres de progression
+
+# ========== STEGANOGRAPHIE IMAGE ==========
+pillow>=10.1.0               # Manipulation d'images (LSB, Bit Plane)
+numpy>=1.24.0,<2.0.0         # Calculs matriciels
+opencv-python>=4.8.1         # DCT steganography, manipulation vidéo
+imageio>=2.31.1              # Formats d'images supplémentaires
+
+# ========== STEGANOGRAPHIE AUDIO ==========
+pydub>=0.25.1                # Manipulation audio simplifiée
+scipy>=1.11.0                # Traitement du signal (FFT, DCT)
+soundfile>=0.12.1            # Lecture/écriture fichiers audio
+
+# ========== STEGANOGRAPHIE RÉSEAU ==========
+scapy>=2.5.0                 # Manipulation de paquets (DNS, ICMP)
+dnspython>=2.4.0             # Requêtes DNS
+paramiko>=3.3.1              # SSH (optionnel)
+
+# ========== CHIFFREMENT ==========
+pycryptodome>=3.19.0         # AES, RC4, ChaCha20
+
+# ========== DOCUMENTATION ==========
+sphinx>=7.0.0                # Documentation
+sphinx-rtd-theme>=1.3.0      # Thème documentation
+
+# ========== DÉVELOPPEMENT ==========
+black>=23.0.0                # Formateur de code
+flake8>=6.1.0                # Linter
+mypy>=1.5.0                  # Type checking
+pytest>=7.4.0                # Tests unitaires
+pytest-cov>=4.1.0            # Couverture de code
+
+# ========== NOTES ==========
+# Modules standards (déjà inclus dans Python) :
+# - wave : import wave
+# - struct : import struct
+# - socket : import socket
+# - os, sys, json, time, datetime, re, math, random, base64, hashlib
+# - ctypes, subprocess, threading, platform, pathlib
+
+# ========== DÉPENDANCES SYSTÈME (Kali/Parrot) ==========
+# sudo apt install:
+#   - metasploit-framework    # msfvenom, msfconsole
+#   - mingw-w64               # Compilation Windows
+#   - golang                  # Payloads Go/macOS
+#   - apktool                 # Décompilation Android
+#   - default-jdk             # Signature APK
+#   - imagemagick             # Manipulation d'images
+#   - ffmpeg                  # Conversion audio/vidéo
+#   - sox                     # Manipulation audio
+#   - xterm                   # Interface
+#   - exploitdb               # searchsploit
+#   - backdoor-factory        # Backdoor Factory
+#   - upx-ucl                 # Compression de payloads
