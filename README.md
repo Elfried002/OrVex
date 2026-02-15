@@ -26,7 +26,7 @@
 
 ## 🎯 **Description**
 
-**OrVex** (Orbit-al Exploit) est un framework d'exploitation avancé de nouvelle génération, conçu pour les tests d'intrusion professionnels. Il combine des techniques d'évasion EDR modernes avec de la stéganographie multi-format pour créer des payloads indétectables.
+**OrVex** est un framework d'exploitation avancé de nouvelle génération, conçu pour les tests d'intrusion professionnels. Il combine des techniques d'évasion EDR modernes avec de la stéganographie multi-format pour créer des payloads indétectables.
 
 Inspiré par **TheFatRat** mais complètement réécrit en Python avec une architecture modulaire, OrVex offre plus de **35 options** pour la génération de payloads, l'évasion, la stéganographie et les communications C2 furtives.
 
@@ -478,3 +478,4 @@ cd OrVex
 | **Contribution**    | Guide pour contribuer                           |
 | **Licence**         | MIT License                                     |
 | **Crédits**         | Remerciements et contact                        |
+
