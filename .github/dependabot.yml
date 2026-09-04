@@ -1,0 +1,63 @@
+version: 2
+
+updates:
+
+  # ============================================================
+  # Python dependencies
+  # ============================================================
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Africa/Abidjan"
+
+    # Limite le nombre de PR Dependabot ouvertes simultanément
+    open-pull-requests-limit: 10
+
+    # Regroupe les mises à jour mineures et patch
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+    # Identification claire des PR
+    labels:
+      - "dependencies"
+      - "python"
+      - "security"
+
+    # Met à jour les contraintes de version uniquement
+    # lorsque cela est nécessaire
+    versioning-strategy: "increase-if-necessary"
+
+
+  # ============================================================
+  # GitHub Actions dependencies
+  # ============================================================
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:30"
+      timezone: "Africa/Abidjan"
+
+    open-pull-requests-limit: 10
+
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+    labels:
+      - "dependencies"
+      - "github-actions"
+      - "security"
